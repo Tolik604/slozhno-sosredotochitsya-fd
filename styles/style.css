@@ -2,4 +2,46 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+display: grid;
+  background-image: var(--bg-image-page);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+}
+
+.decorated-zone-light {
+  position: absolute;
+  text-transform: uppercase;
+margin-left: 25px;
+}
+
+.decorated-zone-light::after {
+  display: inline-block;
+  color: blue;
+  content: "•";
+  font-size: 45px;
+  align-content: start;
+  block-size: 25px;
+  inline-size: 25px;
+ border: 1px solid;
+ border-left: 1px transparent;
+ border-bottom: 1px transparent;
+margin-left: 5px;
+
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  min-height: 668px;
+  justify-self: end;
+  align-self: start;
+  
+}
+
+.header__theme-menu {
+  grid-row-start: 2;
+   grid-row-end: auto;
 }
