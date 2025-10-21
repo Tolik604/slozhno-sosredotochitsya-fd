@@ -5,9 +5,18 @@
 html.theme-dark {
 --bg-image-page: url(../images/cover-image-dark.png);
 --bg-color-page: #000028;
+--bg-color-accent: #FF0070;
+--color-intro-title: #DB00FF;
+--color-intro-shadow: #FF0070;
+--color-intro-text: #000028;
 }
 
 html.theme-light {
 --bg-image-page: url(../images/cover-image-light.png);
 --bg-color-page: #FFC2E6;
+--bg-color-accent: #FF8DCB;
+--color-intro-title: #FFC2E6;
+--color-intro-shadow: #FF8DCB;
+--color-intro-text: #353430;
 }
+

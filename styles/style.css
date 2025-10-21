@@ -2,46 +2,85 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-display: grid;
+  display: grid;
+  /* scrollbar-width: none; */
   background-image: var(--bg-image-page);
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10px;
+  margin: 0;
 }
 
 .decorated-zone-light {
   position: absolute;
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 1rem;
   text-transform: uppercase;
-margin-left: 25px;
+  justify-self: end;
+  align-self: start;
+  color: #FF0070;
+  
 }
 
 .decorated-zone-light::after {
-  display: inline-block;
-  color: blue;
-  content: "•";
-  font-size: 45px;
-  align-content: start;
-  block-size: 25px;
-  inline-size: 25px;
- border: 1px solid;
- border-left: 1px transparent;
- border-bottom: 1px transparent;
-margin-left: 5px;
-
+  content: '\25CF';
+  font-size: 1.5rem;
+  vertical-align: -1px;
+  color: #FF0070;
+  text-shadow: 0 0 8px  #FF0070;
+  margin-left: 5px;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 1fr;
-  height: 100vh;
+  grid-row-start: 1;
+  grid-row-end: auto;
   min-height: 668px;
   justify-self: end;
   align-self: start;
-  
 }
 
 .header__theme-menu {
-  grid-row-start: 2;
-   grid-row-end: auto;
+  grid-row-start: 1;
+  grid-row-end: auto;
+  justify-self: end;
+  align-self: end;
+}
+
+.intro__title {
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 116px;
+  line-height: 82.5%;
+  color: var(--color-intro-title);
+  text-shadow: 5px 5px var(--color-intro-shadow);
+}
+
+.intro__block {
+  display: grid;
+  /* box-sizing: border-box; */
+  grid-template-columns: 1fr;
+  /* min-width: 355px; */
+  height: max-content;
+  
+  margin: 0;
+}
+
+@media (width >= 768px) {
+ .intro__block {
+  grid-template-columns: 1fr 1fr;
+  margin: 0 20px 0 20px;
+   }
+  .intro__block-text {
+  grid-column-start: 2;
+  grid-column-end: auto;
+}
+}
+
+.intro__block-text {
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 1rem;
+  background-color: var(--bg-color-accent);
+  color: var(--color-intro-text);
+  padding-right: 40px;
 }
