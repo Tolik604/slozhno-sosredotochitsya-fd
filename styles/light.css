@@ -4,9 +4,20 @@
   переключая тему
 */
 
-:root.theme-light {
+:root {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  
+--bg-image-page: url(../images/cover-image-light.png);
+--bg-color-page: #FFC2E6;
+--bg-color-accent: #FF8DCB;
+--color-intro-title: #FFC2E6;
+--color-intro-shadow: #FF8DCB;
+--color-decor-zone: #353430;
+--color-accent: #353430;
+--color-default: #353430;
+--color-only-dark: transparent;
+
 }

@@ -8,15 +8,10 @@ html.theme-dark {
 --bg-color-accent: #FF0070;
 --color-intro-title: #DB00FF;
 --color-intro-shadow: #FF0070;
---color-intro-text: #000028;
+--color-decor-zone: #FF0070;
+--color-accent: #000028;
+--color-default: #F1B2CE;
+--color-only-dark: #FF0070;
 }
 
-html.theme-light {
---bg-image-page: url(../images/cover-image-light.png);
---bg-color-page: #FFC2E6;
---bg-color-accent: #FF8DCB;
---color-intro-title: #FFC2E6;
---color-intro-shadow: #FF8DCB;
---color-intro-text: #353430;
-}
 
